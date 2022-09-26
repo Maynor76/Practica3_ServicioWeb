@@ -29,5 +29,11 @@ namespace Practica3Areas
             Areas r = new Areas();
             return r.Cuadrado(Lado);
         }
+        [WebMethod]
+        public double Circulo(double Radio)
+        {
+            Areas r = new Areas();
+            return r.Circulo(Radio);
+        }
     }
 }

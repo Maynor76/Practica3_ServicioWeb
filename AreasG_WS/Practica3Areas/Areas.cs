@@ -10,6 +10,7 @@ namespace Practica3Areas
         public decimal Base { get; set; }
         public decimal Altura { get; set; }
         public decimal Lado { get; set; }
+        public double Radio { get; set; }
         public decimal Triangulo(decimal Base1, decimal Altura1)
         {
             Base = Base1;
@@ -21,6 +22,12 @@ namespace Practica3Areas
         {
             Lado = Lado1;
             var resultado = Lado1 * Lado1;
+            return resultado;
+        }
+        public double Circulo(double Radio1)
+        {
+            Radio = Radio1;
+            var resultado = Math.PI * (Radio1 * Radio1);
             return resultado;
         }
     }
