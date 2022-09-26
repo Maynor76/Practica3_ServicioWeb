@@ -23,5 +23,11 @@ namespace Practica3Areas
             Areas r = new Areas();
             return r.Triangulo(Base, Altura);
         }
+        [WebMethod]
+        public decimal Cuadrado(decimal Lado)
+        {
+            Areas r = new Areas();
+            return r.Cuadrado(Lado);
+        }
     }
 }
